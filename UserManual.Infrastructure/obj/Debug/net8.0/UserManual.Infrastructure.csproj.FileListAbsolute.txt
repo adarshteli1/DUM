@@ -1,0 +1,17 @@
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Infrastructure.deps.json
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Infrastructure.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Infrastructure.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Application.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Domain.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Application.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\bin\Debug\net8.0\UserManual.Domain.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.csproj.AssemblyReference.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.AssemblyInfoInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.AssemblyInfo.cs
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.csproj.CoreCompileInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManu.23D260F9.Up2Date
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\refint\UserManual.Infrastructure.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\UserManual.Infrastructure.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Infrastructure\obj\Debug\net8.0\ref\UserManual.Infrastructure.dll
