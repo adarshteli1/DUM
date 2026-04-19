@@ -1,0 +1,57 @@
+﻿@model UserManual.Application.DTOs.CreateUserDto
+
+@{
+    ViewData["Title"] = "Add New User";
+    string returnUrl = User.IsInRole("Admin")
+        ? Url.Action("Dashboard", "Admin")
+        : Url.Action("Dashboard", "Manuals");
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 rounded-4 p-4">
+                <h3 class="fw-semibold mb-4">👤 Add New User</h3>
+
+                <form asp-action="CreateUser" method="post">
+                    <div class="mb-3">
+                        <label asp-for="UserName" class="form-label">Username</label>
+                        <input asp-for="UserName" class="form-control" placeholder="Enter username" />
+                        <span asp-validation-for="UserName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" class="form-control" type="password" placeholder="Enter password" />
+                        <span asp-validation-for="Password" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="AccessRole" class="form-label">Access Role</label>
+                        <select asp-for="AccessRole" class="form-select" asp-items="ViewBag.Roles">
+                            <option value="">-- Select Role --</option>
+                        </select>
+                        <span asp-validation-for="AccessRole" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="DepartmentId" class="form-label">Department</label>
+                        <select asp-for="DepartmentId" class="form-select" asp-items="ViewBag.Departments">
+                            <option value="">-- Select Department --</option>
+                        </select>
+                        <span asp-validation-for="DepartmentId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="@returnUrl" class="btn btn-secondary">← Cancel</a>
+                        <button type="submit" class="btn btn-success fw-semibold">✅ Create User</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

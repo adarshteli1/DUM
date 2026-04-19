@@ -1,0 +1,66 @@
+﻿@model IEnumerable<UserManual.Application.DTOs.ManualDto>
+@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+<div class="container py-4">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">👋 Welcome, <span class="text-primary">@ViewBag.UserName</span>!</h2>
+        <p class="text-muted fs-5">Here's your personal dashboard.</p>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow rounded-4">
+                <div class="card-body border-start border-4 border-primary ps-4">
+                    <h5 class="text-muted">📄 Manuals Uploaded</h5>
+                    <h2 class="fw-bold text-dark">@ViewBag.ManualCount</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 shadow rounded-4">
+                <div class="card-body border-start border-4 border-success ps-4">
+                    <h5 class="text-muted">📅 Last Upload</h5>
+                    <h2 class="fw-bold text-dark">@ViewBag.LastUpload</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-end mb-3">
+        <a class="btn btn-success fw-semibold" asp-controller="Manuals" asp-action="CreateManuals">➕ Upload New Manual</a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive shadow-sm border rounded-4">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>📁 File Name</th>
+                        <th>🕒 Upload Date</th>
+                        <th>🔧 Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var manual in Model)
+                    {
+                        <tr class="text-center">
+                            <td>@manual.FileName</td>
+                            <td>@manual.UploadDate.ToString("dd MMM yyyy • hh:mm tt")</td>
+                            <td>
+                                <a class="btn btn-sm btn-outline-primary me-2" asp-action="Download" asp-route-id="@manual.ManualId">⬇️ Download</a>
+                                <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@manual.ManualId">🗑 Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info shadow-sm mt-4">ℹ️ You haven't uploaded any manuals yet.</div>
+    }
+</div>

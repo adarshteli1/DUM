@@ -1,0 +1,58 @@
+﻿<form asp-controller="Manuals" asp-action="Create" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label class="form-label">File Name</label>
+        <input name="FileName" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Number of Images</label>
+        <select id="imageCount" class="form-select" onchange="generateImageInputs()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <div id="imageInputs"></div>
+
+    <div class="mb-3">
+        <label class="form-label">Select Task</label>
+        <select name="TaskItemId" asp-items="ViewBag.Tasks" class="form-select">
+            <option value="">-- Select Task --</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">New Task Title</label>
+        <input name="NewTaskTitle" class="form-control" />
+    </div>
+
+    <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+
+    <button type="submit" class="btn btn-primary">📄 Generate PDF</button>
+</form>
+<script>
+    function generateImageInputs() {
+        const count = parseInt(document.getElementById("imageCount").value);
+        const container = document.getElementById("imageInputs");
+        container.innerHTML = "";
+
+        for (let i = 0; i < count; i++) {
+            container.innerHTML += `
+                <div class="mb-3">
+                    <label>Image ${i + 1}</label>
+                    <input name="Images" type="file" class="form-control" accept="image/*" required />
+
+                    <label>Title ${i + 1}</label>
+                    <input name="Titles" class="form-control" required />
+
+                    <label>Description ${i + 1}</label>
+                    <textarea name="Descriptions" class="form-control" rows="2" required></textarea>
+                </div>`;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", generateImageInputs);
+</script>

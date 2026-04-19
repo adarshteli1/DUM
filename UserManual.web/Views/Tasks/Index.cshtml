@@ -1,0 +1,72 @@
+﻿@model IEnumerable<UserManual.Application.DTOs.TaskItemDto>
+
+@{
+    ViewData["Title"] = "Tasks";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="fw-semibold mb-3">📋 Task List</h3>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <div class="d-flex justify-content-end mb-3">
+                <a class="btn btn-primary fw-semibold" asp-action="Create">+ Add Task</a>
+            </div>
+
+            <div class="table-responsive shadow-sm rounded-4 border">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-primary text-center">
+                        <tr>
+                            <th>Task ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>User ID</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var task in Model)
+                        {
+                            <tr class="text-center">
+                                <td>@task.TaskItemId</td>
+                                <td class="text-start">@task.TaskItemName</td>
+                                <td>
+                                    @if (task.Status == "Completed")
+                                    {
+                                        <span class="badge bg-success">Completed</span>
+                                    }
+                                    else if (task.Status == "Overdue")
+                                    {
+                                        <span class="badge bg-danger">Overdue</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-warning text-dark">@task.Status</span>
+                                    }
+                                </td>
+                                <td>@(task.DueDate?.ToString("dd MMM yyyy") ?? "N/A")</td>
+                                <td>@task.UserId</td>
+                                <td class="text-start">@task.Description</td>
+                                <td>
+                                    <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@task.TaskItemId">
+                                        🗑 Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
