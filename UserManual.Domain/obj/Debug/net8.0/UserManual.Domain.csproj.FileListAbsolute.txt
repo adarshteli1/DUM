@@ -1,0 +1,12 @@
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\bin\Debug\net8.0\UserManual.Domain.deps.json
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\bin\Debug\net8.0\UserManual.Domain.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\bin\Debug\net8.0\UserManual.Domain.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.csproj.AssemblyReference.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.AssemblyInfoInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.AssemblyInfo.cs
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.csproj.CoreCompileInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\refint\UserManual.Domain.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\UserManual.Domain.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Domain\obj\Debug\net8.0\ref\UserManual.Domain.dll
