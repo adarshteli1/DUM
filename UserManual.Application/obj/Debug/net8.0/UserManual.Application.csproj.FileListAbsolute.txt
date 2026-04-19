@@ -1,0 +1,15 @@
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\bin\Debug\net8.0\UserManual.Application.deps.json
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\bin\Debug\net8.0\UserManual.Application.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\bin\Debug\net8.0\UserManual.Application.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\bin\Debug\net8.0\UserManual.Domain.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\bin\Debug\net8.0\UserManual.Domain.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.csproj.AssemblyReference.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.AssemblyInfoInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.AssemblyInfo.cs
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.csproj.CoreCompileInputs.cache
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManu.F02B7202.Up2Date
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\refint\UserManual.Application.dll
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\UserManual.Application.pdb
+C:\coding\C# and .net\C#\projects\UserManualOnion\UserManual.Application\obj\Debug\net8.0\ref\UserManual.Application.dll
